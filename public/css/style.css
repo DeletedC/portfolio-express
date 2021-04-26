@@ -2,14 +2,18 @@
     padding-bottom: 5em;
 }
 
+.card {
+    height: 100%;
+}
 .card-image {
-    height: 400px;
+    max-height: 400px;
     object-fit: cover;
     object-position: center top;
+    overflow: hidden;
 
 }
 
-.card-action {
+/* .card-action {
     height: 4em;
     overflow: hidden;
-}
+} */
