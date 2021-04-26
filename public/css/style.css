@@ -1,3 +1,15 @@
 .container {
     padding-bottom: 5em;
 }
+
+.card-image {
+    height: 400px;
+    object-fit: cover;
+    object-position: center top;
+
+}
+
+.card-action {
+    height: 4em;
+    overflow: hidden;
+}
