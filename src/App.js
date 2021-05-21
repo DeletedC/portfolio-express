@@ -2,6 +2,7 @@ import './App.css';
 import Section from './components/Section';
 import Header from './components/Header';
 import About from './components/About';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
 
       {/* Skills */}
       <Section>
-
+        <Skills />
       </Section>
 
       {/* Projects */}
