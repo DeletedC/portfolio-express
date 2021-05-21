@@ -1,6 +1,7 @@
 import './App.css';
-import Section from '../src/components/Section';
-import Header from '../src/components/Header';
+import Section from './components/Section';
+import Header from './components/Header';
+import About from './components/About';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
 
       {/* About */}
       <Section color={'bg-blue-100'}>
-        
+        <About />
       </Section>
 
       {/* Skills */}
