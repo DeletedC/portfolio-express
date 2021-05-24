@@ -2,11 +2,11 @@ import DevIcon from './DevIcon';
 
 const Skills = () => {
   return (
-    <div className='flex flex-wrap max-h-full justify-center'>
+    <div className=''>
       <h1 className='text-center p-6'>Skills</h1>
 
       {/* Icons Container */}
-      <div className='flex flex-wrap content-start'>
+      <div className='flex flex-wrap content-end'>
 
         {/* First Row */}
         <div className='flex justify-evenly'>
