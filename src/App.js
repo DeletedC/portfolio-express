@@ -23,7 +23,7 @@ function App() {
       </Section>
 
       {/* Projects */}
-      <Section>
+      <Section color={'bg-blue-400'}>
 
       </Section>
 

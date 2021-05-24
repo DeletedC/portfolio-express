@@ -6,7 +6,7 @@ const Skills = () => {
       <h1 className='text-center p-6'>Skills</h1>
 
       {/* Icons Container */}
-      <div className=''>
+      <div className='flex flex-wrap content-start'>
 
         {/* First Row */}
         <div className='flex justify-evenly'>
