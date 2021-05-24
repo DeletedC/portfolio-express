@@ -1,7 +1,7 @@
 const DevIcon = (props) => {
   return (
-    <div className='w-12 p-4'>
-      {props.children};
+    <div className='w-1/6'>
+      {props.children}
     </div>  
   );
 }
