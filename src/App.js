@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       {/* Intro */}
-      <Section color={'bg-blue-400'}>
+      <Section color={'bg-transparent'}>
         <Header />
       </Section>
 
