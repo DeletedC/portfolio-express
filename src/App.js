@@ -3,6 +3,7 @@ import Section from './components/Section';
 import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
 
       {/* Projects */}
       <Section color={'bg-blue-400'}>
-
+        <Projects />
       </Section>
 
       {/* Contact */}
