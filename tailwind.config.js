@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'hero-portrait': "url('./img/Headshot_20210524_Portrait.jpg')",
-        'hero-landscape': "url('./img/Headshot_20210524_Landscape.jpg')",
+        'hero-portrait': "url('./img/Headshot_Final_Portrait.jpg')",
+        'hero-landscape': "url('./img/Headshot_Final_Landscape.jpg')",
       })
     },
   },
