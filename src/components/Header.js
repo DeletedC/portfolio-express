@@ -16,6 +16,7 @@ const Header = () => {
           <p>Pittsburgh, PA</p>
           <a href="mailto: CurtisJWoodsII@gmail.com">CurtisJWoodsII@gmail.com</a>
           <a href="tel:724-777-8479">724-777-8479</a>
+          <a href="./docs/Curtis Woods - Resume - 2021MayRevision.pdf" target="_blank">Resume</a>
         </div>
       </div>
     </div>
