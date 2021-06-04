@@ -1,3 +1,6 @@
+import DevIcon from "./DevIcon";
+import svgPicker from '../js/svgPicker'
+
 const ProjectDiv = (props) => {
   return (
     <div className='flex'>
@@ -9,7 +12,11 @@ const ProjectDiv = (props) => {
 
         {/* DevIcons will go here */}
         <div>
-          
+          {props.tech.forEach((item) => {
+            <DevIcon>
+              {svgPicker(item)}
+            </DevIcon>
+          })}
         </div>
 
       </div>
