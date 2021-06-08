@@ -1,5 +1,6 @@
 import DevIcon from "./DevIcon";
 import svgPicker from '../js/svgPicker'
+import { ReactComponent as JsSVG} from '../img/svg/javascript.svg';
 
 const ProjectDiv = (props) => {
   return (
@@ -12,11 +13,34 @@ const ProjectDiv = (props) => {
 
         {/* DevIcons will go here */}
         <div>
-          {props.tech.forEach((item) => {
-            <DevIcon>
-              {svgPicker(item)}
-            </DevIcon>
-          })}
+          {props.tech.map((item) => {
+            switch (item) {
+              case "javascript":
+                return (
+                  <DevIcon>
+                      <JsSVG />
+                  </DevIcon>
+                );
+            //   case "react":
+            //     return objSVG.react;
+            //   case "node":
+            //     return objSVG.node;
+            //   case "express":
+            //     return objSVG.express;
+            //   case "git":
+            //     return objSVG.git;
+            //   case "linux":
+            //     return objSVG.linux;
+            //   case "mongoDB":
+            //     return objSVG.mongoDB;
+            //   case "python":
+            //     return objSVG.python;
+            //   case "postgres":
+            //     return objSVG.postgres;
+              default:
+                break;
+            }
+          })} 
         </div>
 
       </div>
