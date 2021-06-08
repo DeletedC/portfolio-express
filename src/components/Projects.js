@@ -5,7 +5,7 @@ const Projects = () => {
     <div>
       <h1 className='text-center p-6'>Projects</h1>
 
-      <ProjectDiv name='Project Name Placeholder' tech={['javascript']}></ProjectDiv>
+      <ProjectDiv name='Project Name Placeholder' tech={['javascript', 'linux']}></ProjectDiv>
     </div>
   );
 }
