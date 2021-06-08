@@ -13,82 +13,87 @@ import { ReactComponent as PythonSVG} from '../img/svg/python.svg';
 
 const ProjectDiv = (props) => {
   return (
-    <div className='flex'>
-      
-      {/* Project Name and Description */}
-      <div>
-        <h1>{props.name}</h1>
-        <p>Built With:</p>
+    <div className='flex flex-col items-center min-w-full px-12'>
+      <div className='flex flex-row'>
+        {/* Project Name and Description */}
+        <div className='w-2/4'>
+            <h1>{props.name}</h1>
+            <p>Built With:</p>
 
-        {/* DevIcons will go here */}
-        <div>
-          {props.tech.map((item) => {
-            switch (item) {
-              case "javascript":
-                return (
-                  <DevIcon>
-                      <JsSVG />
-                  </DevIcon>
-                );
-              case "react":
-                return (
+            {/* DevIcons will go here */}
+            <div className='flex flex-row flex-nowrap'>
+            {props.tech.map((item) => {
+                switch (item) {
+                case "javascript":
+                    return (
                     <DevIcon>
-                        <ReactSVG />
+                        <JsSVG />
                     </DevIcon>
-                  );
-              case "node":
-                return (
-                    <DevIcon>
-                        <NodeSVG />
-                    </DevIcon>
-                  );
-              case "express":
-                return (
-                    <DevIcon>
-                        <ExpressSVG />
-                    </DevIcon>
-                  );
-              case "git":
-                return (
-                    <DevIcon>
-                        <GitSVG />
-                    </DevIcon>
-                  );
-              case "linux":
-                return (
-                    <DevIcon>
-                        <LinuxSVG />
-                    </DevIcon>
-                  );
-              case "mongoDB":
-                return (
-                    <DevIcon>
-                        <MongoSVG />
-                    </DevIcon>
-                  );
-              case "python":
-                return (
-                    <DevIcon>
-                        <PythonSVG />
-                    </DevIcon>
-                  );
-              case "postgres":
-                return (
-                    <DevIcon>
-                        <PostgresSVG />
-                    </DevIcon>
-                  );
-              default:
-                break;
-            }
-          })} 
+                    );
+                case "react":
+                    return (
+                        <DevIcon>
+                            <ReactSVG />
+                        </DevIcon>
+                    );
+                case "node":
+                    return (
+                        <DevIcon>
+                            <NodeSVG />
+                        </DevIcon>
+                    );
+                case "express":
+                    return (
+                        <DevIcon>
+                            <ExpressSVG />
+                        </DevIcon>
+                    );
+                case "git":
+                    return (
+                        <DevIcon>
+                            <GitSVG />
+                        </DevIcon>
+                    );
+                case "linux":
+                    return (
+                        <DevIcon>
+                            <LinuxSVG />
+                        </DevIcon>
+                    );
+                case "mongoDB":
+                    return (
+                        <DevIcon>
+                            <MongoSVG />
+                        </DevIcon>
+                    );
+                case "python":
+                    return (
+                        <DevIcon>
+                            <PythonSVG />
+                        </DevIcon>
+                    );
+                case "postgres":
+                    return (
+                        <DevIcon>
+                            <PostgresSVG />
+                        </DevIcon>
+                    );
+                default:
+                    break;
+                }
+            })} 
+            </div>
+
         </div>
 
+        {/* Project Images */}
+        <div className='w-2/4'>
+            <p>Image Placeholder</p>
+        </div>
       </div>
-
-      {/* Project Images */}
-      <div>
-        <p>Image Placeholder</p>
+      {/* Project Description */}
+      <div className='flex justify-center'>
+        {props.children}
       </div>
     </div>
   );
