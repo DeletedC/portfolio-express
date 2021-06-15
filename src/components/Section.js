@@ -1,6 +1,6 @@
 const Section = (props) => {
   return (
-    <div className={`flex min-h-screen h-auto justify-center ${props.color}`}>
+    <div className={`flex min-h-screen justify-center ${props.color}`}>
       {props.children}
     </div>
   );
