@@ -27,7 +27,7 @@ const ProjectDiv = (props) => {
         </div>
 
         {/* Project Images */}
-            <img className='object-contain w-2/4' src='img/Screenshot_StudentTracker.png' />
+            <img className='object-contain w-2/4' src={props.image} alt='Project Screenshot'/>
 
       </div>
 
