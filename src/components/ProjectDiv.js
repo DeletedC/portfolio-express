@@ -30,7 +30,6 @@ const ProjectDiv = (props) => {
         <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt='Project Screenshot'/>
 
       </div>
-
     </div>
   );
 }

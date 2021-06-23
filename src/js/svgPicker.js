@@ -8,6 +8,9 @@ import { ReactComponent as MongoSVG} from '../img/svg/mongo.svg';
 import { ReactComponent as NodeSVG} from '../img/svg/node.svg';
 import { ReactComponent as PostgresSVG} from '../img/svg/postgres.svg';
 import { ReactComponent as PythonSVG} from '../img/svg/python.svg';
+import { ReactComponent as GmailSVG } from '../img/svg/gmail_2020.svg';
+import { ReactComponent as PhoneSVG } from '../img/svg/phone.svg';
+
 
 const svgPicker = (item) => {
     switch (item) {
@@ -65,6 +68,18 @@ const svgPicker = (item) => {
                     <PostgresSVG />
                 </DevIcon>
             );
+        case "email":
+            return (
+                <DevIcon>
+                    <GmailSVG />
+                </DevIcon>
+            );
+        case "phone":
+            return (
+                <DevIcon>
+                    <PhoneSVG />
+                </DevIcon>
+            )
         default:
             break;
         }
