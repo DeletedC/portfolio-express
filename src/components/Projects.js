@@ -7,32 +7,34 @@ const Projects = () => {
   return (
     <div>
       <h1 className='text-center p-6'>Projects</h1>
-
-      <ProjectDiv name='Project Name Placeholder' 
-      tech={['javascript', 'linux', 'react', 'mongoDB']} 
-      image={imgStudentTracker}>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-      </ProjectDiv>
-      <ProjectDiv name='Project Name Placeholder'
-      tech={['javascript', 'react']}
-      image={imgGetHub} 
-      direction='flex-row-reverse'>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-      </ProjectDiv>
-      <ProjectDiv name='Project Name Placeholder' 
-      tech={['python', 'mongoDB']}
-      image={imgIntonation}>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-        <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
-      </ProjectDiv>
+      
+      <div className='divide-y-4'>
+        <ProjectDiv name='Project Name Placeholder' 
+        tech={['javascript', 'linux', 'react', 'mongoDB']} 
+        image={imgStudentTracker}>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+        </ProjectDiv>
+        <ProjectDiv name='Project Name Placeholder'
+        tech={['javascript', 'react']}
+        image={imgGetHub} 
+        direction='flex-row-reverse'>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+        </ProjectDiv>
+        <ProjectDiv name='Project Name Placeholder' 
+        tech={['python', 'mongoDB']}
+        image={imgIntonation}>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+          <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
+        </ProjectDiv>
+      </div>
     </div>
   );
 }

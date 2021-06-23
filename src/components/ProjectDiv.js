@@ -5,7 +5,7 @@ const ProjectDiv = (props) => {
   return (
     
     // MAIN CONTAINER
-    <div className='flex flex-col items-center min-w-full py-12'>
+    <div className='flex flex-col items-center min-w-full py-12 pb-24'>
       <div className={`flex ${props.direction || 'flex-row'} px-12`}>
         
         {/* Project Name and Description */}
@@ -21,13 +21,13 @@ const ProjectDiv = (props) => {
             </div>
 
           {/* Project Description */}
-          <div className={`flex flex-col ${props.direction? 'justify-end': 'justify-start'} text-2xl leading-relaxed py-12`}>
+          <div className={`flex flex-col ${props.direction? 'justify-end pl-20': 'justify-start pr-20'} text-2xl leading-relaxed py-12`}>
             {props.children}
           </div>
         </div>
 
         {/* Project Images */}
-            <img className='object-contain w-2/4' src={props.image} alt='Project Screenshot'/>
+        <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt='Project Screenshot'/>
 
       </div>
 
