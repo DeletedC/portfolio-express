@@ -30,6 +30,33 @@ const ProjectDiv = (props) => {
         <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt='Project Screenshot'/>
 
       </div>
+
+      {/* MOBILE CONTAINER */}
+      <div className='md:hidden'>
+        {/* Project Name and Description */}
+        <div className=''>
+          <h1 className='pb-4'>{props.name}</h1>
+
+          {/* Project Images */}
+          <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt='Project Screenshot'/>
+
+          <p className='text-xl pb-2'>Built With:</p>
+
+          {/* DevIcons will go here */}
+          <div className={`flex flex-row flex-nowrap`}>
+          {props.tech.map((item) => {
+              return svgPicker(item);
+          })} 
+          </div>
+
+          {/* Project Description */}
+          <div className={`flex flex-col ${props.direction? 'justify-end pl-20': 'justify-start pr-20'} text-2xl leading-relaxed py-12`}>
+            {props.children}
+          </div>
+        </div>
+
+
+      </div>
     </div>
   );
 }
