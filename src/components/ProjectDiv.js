@@ -4,9 +4,9 @@ import svgPicker from '../js/svgPicker'
 const ProjectDiv = (props) => {
   return (
     
-    // MAIN CONTAINER
+    // DESKTOP CONTAINER
     <div className='flex flex-col items-center min-w-full py-12 pb-24'>
-      <div className={`flex ${props.direction || 'flex-row'} px-12`}>
+      <div className={`hidden md:flex ${props.direction || 'flex-row'} px-12`}>
         
         {/* Project Name and Description */}
         <div className={`flex flex-col w-2/4 ${props.direction? 'items-end': 'items-start'}`}>
