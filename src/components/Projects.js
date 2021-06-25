@@ -6,9 +6,9 @@ import imgIntonation from '../img/projects/Screenshot_Intonation.png';
 const Projects = () => {
   return (
     <div>
-      <h1 className='text-center p-6'>Projects</h1>
+      <h1 className='text-center pt-6'>Projects</h1>
       
-      <div className='divide-y-4'>
+      <div className=''>
         <ProjectDiv name='Project Name Placeholder' 
         tech={['javascript', 'linux', 'react', 'mongoDB']} 
         image={imgStudentTracker}>
