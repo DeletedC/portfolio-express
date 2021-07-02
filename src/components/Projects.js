@@ -1,7 +1,7 @@
 import ProjectDiv from './ProjectDiv';
-import imgStudentTracker from '../img/projects/Screenshot_StudentTracker.png';
-import imgGetHub from '../img/projects/Screenshot_GetHub_Jon.jpeg';
-import imgIntonation from '../img/projects/Screenshot_Intonation.png';
+// import imgStudentTracker from '../../public/img/projects/Screenshot_StudentTracker.png';
+// import imgGetHub from '../../public/img/projects/Screenshot_GetHub_Jon.jpeg';
+// import imgIntonation from '../../public/img/projects/Screenshot_Intonation.png';
 
 const Projects = () => {
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
       <div className=''>
         <ProjectDiv name='Project Name Placeholder' 
         tech={['javascript', 'linux', 'react', 'mongoDB']} 
-        image={imgStudentTracker}>
+        image={'/img/projects/Screenshot_StudentTracker.png'}>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
@@ -19,7 +19,7 @@ const Projects = () => {
         </ProjectDiv>
         <ProjectDiv name='Project Name Placeholder'
         tech={['javascript', 'react']}
-        image={imgGetHub} 
+        image={"/img/projects/Screenshot_GetHub_Jon.jpeg"} 
         direction='flex-row-reverse'>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
@@ -28,7 +28,7 @@ const Projects = () => {
         </ProjectDiv>
         <ProjectDiv name='Project Name Placeholder' 
         tech={['python', 'mongoDB']}
-        image={imgIntonation}>
+        image={'/img/projects/Screenshot_Intonation.png'}>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>

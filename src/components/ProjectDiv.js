@@ -1,4 +1,4 @@
-import svgPicker from '../js/svgPicker'
+import svgPicker from '../pages/api/svgPicker';
 
 
 const ProjectDiv = (props) => {
