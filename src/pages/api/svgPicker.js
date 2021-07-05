@@ -68,7 +68,31 @@ const svgPicker = (item) => {
                 <DevIcon>
                     {objSVG.phone}
                 </DevIcon>
-            )
+            );
+        case "heroku":
+            return (
+                <DevIcon>
+                    {objSVG.heroku}
+                </DevIcon>
+            );
+        case "netlify":
+            return (
+                <DevIcon>
+                    {objSVG.netlify}
+                </DevIcon>
+            );
+        case "html":
+            return (
+                <DevIcon>
+                    {objSVG.html}
+                </DevIcon>
+            );
+        case "css":
+            return (
+                <DevIcon>
+                    {objSVG.css}
+                </DevIcon>
+            );
         default:
             break;
         }
