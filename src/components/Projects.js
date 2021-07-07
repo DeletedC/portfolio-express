@@ -10,7 +10,7 @@ const Projects = () => {
       
       <div className=''>
         <ProjectDiv name='Project Name Placeholder' 
-        tech={['javascript', 'linux', 'react', 'mongoDB']} 
+        tech={['react', 'mongoDB', 'heroku']} 
         image={'/img/projects/Screenshot_StudentTracker.png'}>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
           <p>Description of the project, lorem ipsum lorem ipsum lorem ipsum lorem ipsum </p>
