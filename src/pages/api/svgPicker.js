@@ -1,96 +1,102 @@
 import DevIcon from '../../components/DevIcon';
 import objSVG from './SVG';
 
-const svgPicker = (item) => {
+const svgPicker = (item, params) => {
     switch (item) {
         case "javascript":
             return (
-            <DevIcon>
+            <DevIcon padding={params}>
                 {objSVG.javascript}
             </DevIcon>
             );
         case "react":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.react}
                 </DevIcon>
             );
         case "node":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.node}
                 </DevIcon>
             );
         case "express":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.express}
                 </DevIcon>
             );
         case "git":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.git}
                 </DevIcon>
             );
         case "linux":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.linux}
                 </DevIcon>
             );
         case "mongoDB":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.mongoDB}
                 </DevIcon>
             );
         case "python":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.python}
                 </DevIcon>
             );
         case "postgres":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.postgres}
                 </DevIcon>
             );
         case "email":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.gmail}
                 </DevIcon>
             );
         case "phone":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.phone}
                 </DevIcon>
             );
         case "heroku":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.heroku}
                 </DevIcon>
             );
         case "netlify":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.netlify}
                 </DevIcon>
             );
         case "html":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.html}
                 </DevIcon>
             );
         case "css":
             return (
-                <DevIcon>
+                <DevIcon padding={params}>
                     {objSVG.css}
+                </DevIcon>
+            );
+        case "linkedIn":
+            return (
+                <DevIcon padding={params}>
+                    {objSVG.linkedIn}
                 </DevIcon>
             );
         default:
