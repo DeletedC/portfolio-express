@@ -19,7 +19,7 @@ const Header = () => {
 
           {/* Button for Resume */}
           <button className='absolute right-0 bg-green-600 rounded-lg p-5 px-20'
-            onClick={() => window.open("./docs/Curtis Woods - Resume - 2021MayRevision.pdf", "_blank")}
+            onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank")}
           >Resumé</button> 
         </div>
       </div>
