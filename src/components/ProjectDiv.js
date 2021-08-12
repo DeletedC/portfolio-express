@@ -31,7 +31,7 @@ const ProjectDiv = (props) => {
           </div>
           
           {/* LINKS GO HERE */}
-          <ButtonLinks data={props.links}></ButtonLinks>
+          <ButtonLinks data={props.links} />
 
         </div>
 
@@ -66,6 +66,9 @@ const ProjectDiv = (props) => {
           <div className={`text-2xl leading-relaxed py-4 px-4`}>
             {props.children}
           </div>
+
+          {/* LINKS GO HERE */}
+          <ButtonLinks data={props.links} />
         </div>
 
 
