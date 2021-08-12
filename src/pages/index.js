@@ -23,7 +23,7 @@ export default function Home() {
       </Section>
 
       {/* About */}
-      <Section color={'bg-blue-100'}>
+      <Section color={'bg-blue-300'} height={'h-auto'}>
         <About />
       </Section>
 

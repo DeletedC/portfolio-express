@@ -9,7 +9,8 @@ const Projects = () => {
       <h1 className='text-center pt-6'>Projects</h1>
       
       <div className=''>
-        <ProjectDiv name='Piano Studio Student Tracker' 
+        <ProjectDiv name='Piano Studio Student Tracker'
+        color={'bg-blue-400'} 
         tech={['mongoDB', 'express', 'react', 'node', 'heroku']} 
         image={'/img/projects/Screenshot_StudentTracker.png'} 
         links={{
@@ -22,6 +23,7 @@ const Projects = () => {
           <p>Lastly, you can update or remove the lesson book that they’re currently working in.</p>
         </ProjectDiv>
         <ProjectDiv name='GetHub'
+        color={'bg-blue-300'} 
         tech={['react', 'node']}
         image={"/img/projects/Screenshot_GetHub_Jon.jpeg"} 
         links={{

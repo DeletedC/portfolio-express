@@ -3,7 +3,7 @@ import svgPicker from '../pages/api/svgPicker';
 
 const ProjectDiv = (props) => {
   return (
-    <div className='flex flex-col items-center min-w-full py-12 pb-24'>
+    <div className={`flex flex-col items-center min-w-full py-12 pb-24 ${props.color}`}>
 
       {/* 
       ////////////////////////////
