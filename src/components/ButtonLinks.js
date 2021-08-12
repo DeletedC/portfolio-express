@@ -1,5 +1,4 @@
 const ButtonLinks = (props) => {
-    console.log(props)
   return (
     <div className="inline-flex">
     {props.data.liveSite? 
