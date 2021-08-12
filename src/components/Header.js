@@ -18,12 +18,14 @@ const Header = () => {
           <p>Pittsburgh, PA</p>
           <a href="mailto: CurtisJWoodsII@gmail.com">CurtisJWoodsII@gmail.com</a>
           <div className='inline-flex md:pt-12'>
-          <a className='flex justify-left transform hover:scale-110' href="https://www.linkedin.com/in/curtisjwoods" target='_blank'>{svgPicker('linkedIn', ' ')}</a>
+          <a className='flex justify-left transform hover:scale-110' 
+            href="https://www.linkedin.com/in/curtisjwoods" 
+            target='_blank' rel="noreferrer">{svgPicker('linkedIn', ' ')}</a>
           <a className='flex justify-left transform hover:scale-110' href="mailto: CurtisJWoodsII@gmail.com">{svgPicker('email', ' ')}</a>
           <a className='flex justify-left transform hover:scale-110' href="tel:724-777-8479">{svgPicker('phone', ' ')}</a>
           {/* Button for Resume */}
             <button className='bg-green-600 hover:bg-green-400 transform hover:scale-110 rounded-lg p-5 px-20'
-              onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank")}
+              onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank", ['noopener', 'noreferrer'])}
             >Résumé</button> 
           </div>
         </div>
