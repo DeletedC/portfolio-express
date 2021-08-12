@@ -23,7 +23,7 @@ const Projects = () => {
           <p>Lastly, you can update or remove the lesson book that they’re currently working in.</p>
         </ProjectDiv>
         <ProjectDiv name='GetHub'
-        color={'bg-blue-300'} 
+        color={'bg-blue-500'} 
         tech={['react', 'node']}
         image={"/img/projects/Screenshot_GetHub_Jon.jpeg"} 
         links={{
