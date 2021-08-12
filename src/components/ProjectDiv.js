@@ -18,7 +18,7 @@ const ProjectDiv = (props) => {
             <p className='text-xl pb-2'>Built With:</p>
 
             {/* DevIcons will go here */}
-            <div className={`flex flex-row flex-nowrap space-x-6 ${props.direction? 'justify-end': 'justify-start'}`}>
+            <div className={`inline-flex flex-nowrap space-x-6 ${props.direction? 'justify-end': 'justify-start'}`}>
             {props.tech.map((item) => {
                 return svgPicker(item);
             })} 
@@ -28,12 +28,51 @@ const ProjectDiv = (props) => {
           <div className={`flex flex-col ${props.direction? 'justify-end pl-20': 'justify-start pr-20'} text-2xl leading-relaxed py-12`}>
             {props.children}
           </div>
+          
+          {/* LINKS GO HERE */}
+          
+          <div class="inline-flex">
+            {props.links.liveSite? 
+              <button class="bg-green-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-10 mr-4 rounded"
+              onClick={() => window.open(props.links.liveSite, "_blank")}>
+                Live Site
+              </button>
+            : ''
+            }
+
+            {props.links.repo.frontEnd && !props.links.repo.backEnd?
+              <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-10 mr-4 rounded"
+              onClick={() => window.open(props.links.repo.frontEnd, "_blank")}>
+                Repo
+              </button>
+            : props.links.repo.frontEnd && props.links.repo.backEnd?
+
+            <div>
+              <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-10 mr-4 rounded"
+              onClick={() => window.open(props.links.repo.frontEnd, "_blank")}>
+                Front End Repo
+              </button>
+              <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-10 mr-4 rounded"
+              onClick={() => window.open(props.links.repo.backEnd, "_blank")}>
+                Back End Repo
+              </button>
+            </div>
+
+            : ''
+            }
+          
+              
+              
+          </div>
+
         </div>
 
         {/* Project Images */}
         <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt='Project Screenshot'/>
 
       </div>
+
+      
 
       {/* 
       ////////////////////////////
