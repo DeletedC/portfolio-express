@@ -1,6 +1,6 @@
 import svgPicker from '../pages/api/svgPicker';
 import ButtonLinks from './ButtonLinks';
-
+import Image from 'next/image';
 
 const ProjectDiv = (props) => {
   return (
@@ -36,7 +36,10 @@ const ProjectDiv = (props) => {
         </div>
 
         {/* Project Images */}
-        <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt='Project Screenshot'/>
+        <div className=' w-2/4 rounded-2xl relative' >
+          <Image src={props.image} layout='fill' objectFit="contain" alt={`${props.name} Screenshot`}/>
+        </div>
+        
 
       </div>
 
