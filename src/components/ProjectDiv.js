@@ -56,8 +56,9 @@ const ProjectDiv = (props) => {
           <h1 className='pb-4 text-center'>{props.name}</h1>
 
           {/* Project Images */}
-          <img className='object-contain pb-2' src={props.image} alt='Project Screenshot'/>
-
+          <div className='object-contain pb-2'>
+            <Image src={props.image} layout='fill' objectFit="contain" alt={`${props.name} Screenshot`}/>
+          </div>
           {/* DevIcons will go here */}
           <div className={`inline-flex justify-center py-8 px-12`}>
           {props.tech.map((item) => {
