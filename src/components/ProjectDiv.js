@@ -1,9 +1,10 @@
-import svgPicker from '../js/svgPicker'
-
+import svgPicker from '../pages/api/svgPicker';
+import ButtonLinks from './ButtonLinks';
+import Image from 'next/image';
 
 const ProjectDiv = (props) => {
   return (
-    <div className='flex flex-col items-center min-w-full py-12 pb-24'>
+    <div className={`flex flex-col items-center min-w-full py-12 pb-24 ${props.color}`}>
 
       {/* 
       ////////////////////////////
@@ -18,7 +19,7 @@ const ProjectDiv = (props) => {
             <p className='text-xl pb-2'>Built With:</p>
 
             {/* DevIcons will go here */}
-            <div className={`flex flex-row flex-nowrap ${props.direction? 'justify-end': 'justify-start'}`}>
+            <div className={`inline-flex flex-nowrap space-x-6 ${props.direction? 'justify-end': 'justify-start'}`}>
             {props.tech.map((item) => {
                 return svgPicker(item);
             })} 
@@ -28,12 +29,21 @@ const ProjectDiv = (props) => {
           <div className={`flex flex-col ${props.direction? 'justify-end pl-20': 'justify-start pr-20'} text-2xl leading-relaxed py-12`}>
             {props.children}
           </div>
+          
+          {/* LINKS GO HERE */}
+          <ButtonLinks data={props.links} />
+
         </div>
 
         {/* Project Images */}
-        <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt='Project Screenshot'/>
+        <div className=' w-2/4 rounded-2xl relative' >
+          <Image src={props.image} layout='fill' objectFit="contain" alt={`${props.name} Screenshot`}/>
+        </div>
+        
 
       </div>
+
+      
 
       {/* 
       ////////////////////////////
@@ -46,8 +56,9 @@ const ProjectDiv = (props) => {
           <h1 className='pb-4 text-center'>{props.name}</h1>
 
           {/* Project Images */}
-          <img className='object-contain pb-2' src={props.image} alt='Project Screenshot'/>
-
+          <div className='object-contain pb-2'>
+            <Image src={props.image} layout='fill' objectFit="contain" alt={`${props.name} Screenshot`}/>
+          </div>
           {/* DevIcons will go here */}
           <div className={`inline-flex justify-center py-8 px-12`}>
           {props.tech.map((item) => {
@@ -59,6 +70,9 @@ const ProjectDiv = (props) => {
           <div className={`text-2xl leading-relaxed py-4 px-4`}>
             {props.children}
           </div>
+
+          {/* LINKS GO HERE */}
+          <ButtonLinks data={props.links} />
         </div>
 
 

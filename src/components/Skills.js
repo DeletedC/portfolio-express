@@ -1,4 +1,4 @@
-import svgPicker from '../js/svgPicker';
+import svgPicker from '../pages/api/svgPicker';
 
 const Skills = () => {
   return (
@@ -13,33 +13,45 @@ const Skills = () => {
           
           {/* JavaScript */}
           {svgPicker('javascript')}
-
+          
           {/* React */}
           {svgPicker('react')}
 
-          {/* Node */}
-          {svgPicker('node')}
+          {/* HTML */}
+          {svgPicker('html')}
+
+          {/* CSS */}
+          {svgPicker('css')}
 
         </div>
         {/* First Row End */}
 
         {/* Second Row */}
         <div className='flex justify-evenly'>
+          
+          {/* Node */}
+          {svgPicker('node')}
+
           {/* Express */}
           {svgPicker('express')}
 
           {/* Git */}
-          {svgPicker('git')}
+          {svgPicker('mongoDB')}
 
           {/* Linux */}
-          {svgPicker('linux')}
+          {svgPicker('git')}
+
         </div>
         {/* Second Row End */}
 
         {/* Third Row */}
         <div className='flex justify-evenly'>
-          {/* MongoDB */}
-          {svgPicker('mongoDB')}
+
+          {/* Heroku */}
+          {svgPicker('heroku')}
+          
+          {/* Netlify */}
+          {svgPicker('netlify')}
           
           {/* Python */}
           {svgPicker('python')}
