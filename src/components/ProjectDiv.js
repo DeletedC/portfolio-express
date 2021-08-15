@@ -1,6 +1,6 @@
 import svgPicker from '../pages/api/svgPicker';
 import ButtonLinks from './ButtonLinks';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 const ProjectDiv = (props) => {
   return (
@@ -36,9 +36,7 @@ const ProjectDiv = (props) => {
         </div>
 
         {/* Project Images */}
-        <div className=' w-2/4 rounded-2xl relative' >
-          <Image src={props.image} layout='fill' objectFit="contain" alt={`${props.name} Screenshot`}/>
-        </div>
+        <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt={`${props.name} Screenshot`}/>
         
 
       </div>
@@ -56,9 +54,8 @@ const ProjectDiv = (props) => {
           <h1 className='pb-4 text-center'>{props.name}</h1>
 
           {/* Project Images */}
-          <div className='object-contain pb-2'>
-            <Image src={props.image} layout='fill' objectFit="contain" alt={`${props.name} Screenshot`}/>
-          </div>
+          <img className='object-contain' src={props.image} alt={`${props.name} Screenshot`}/>
+          
           {/* DevIcons will go here */}
           <div className={`inline-flex justify-center py-8 px-12`}>
           {props.tech.map((item) => {
@@ -67,7 +64,7 @@ const ProjectDiv = (props) => {
           </div>
 
           {/* Project Description */}
-          <div className={`text-2xl leading-relaxed py-4 px-4`}>
+          <div className={`text-2xl leading-relaxed py-4 px-6`}>
             {props.children}
           </div>
 

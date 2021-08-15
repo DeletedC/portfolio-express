@@ -1,3 +1,7 @@
 {
-  "extends": ["next", "next/core-web-vitals"]
+  "extends": ["next", "next/core-web-vitals"],
+  "rules": {
+    // I don't need next/image for this project
+    "@next/next/no-img-element": "off"
+  }
 }
