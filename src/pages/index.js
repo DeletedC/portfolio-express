@@ -15,9 +15,9 @@ export default function Home() {
         <title>Curtis J. Woods II</title>
         <meta name="description" content="The Portfolio of Curtis J. Woods II" />
         <meta property='og:title' content='Curtis J Woods II'/>
-        <meta property='og:image' content='//www.CurtisJWoods.com/img/Headshot_Final_Portrait.jpg'/>
+        <meta property='og:image' content='https://www.CurtisJWoods.com/img/Headshot_Final_Portrait.jpg'/>
         <meta property='og:description' content='The Portfolio of Curtis J. Woods II'/>
-        <meta property='og:url' content='//www.CurtisJWoods.com'/>
+        <meta property='og:url' content='https://www.CurtisJWoods.com'/>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
