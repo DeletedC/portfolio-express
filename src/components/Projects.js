@@ -12,7 +12,7 @@ const Projects = () => {
         <ProjectDiv name='Piano Studio Student Tracker'
         color={'bg-blue-400'} 
         tech={['mongoDB', 'express', 'react', 'node', 'heroku']} 
-        image={'/img/projects/Screenshot_StudentTracker.png'} 
+        image={'/img/projects/Screenshot_StudentTracker.jpg'}
         links={{
           liveSite: 'https://curtiswoods.herokuapp.com/', 
           repo: {
