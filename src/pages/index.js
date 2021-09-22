@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
+import MobileLinksBar from '../components/MobileLinksBar';
 import Section from '../components/Section';
 import Header from '../components/Header';
 import About from '../components/About';
@@ -24,6 +25,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* Bar for Contact links on mobile */}
+      <MobileLinksBar />
+
       {/* Intro */}
       <Section color={'bg-transparent'}>
         <Header />
@@ -45,7 +49,7 @@ export default function Home() {
       </Section>
 
       {/* Contact */}
-      <Section>
+      <Section height={'h-auto md:pb-20 mb-28 md:m-auto'}>
         <Contact />
       </Section>
 
