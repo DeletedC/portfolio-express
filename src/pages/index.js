@@ -25,12 +25,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* 
-      ////////////////////////////
-      MOBILE CONTAINER 
-      ///////////////////////////
-      */}
-
       {/* Bar for Contact links on mobile */}
       <MobileLinksBar />
 
@@ -55,7 +49,7 @@ export default function Home() {
       </Section>
 
       {/* Contact */}
-      <Section>
+      <Section height={'h-auto md:pb-20 mb-28 md:m-auto'}>
         <Contact />
       </Section>
 
