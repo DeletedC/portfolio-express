@@ -12,7 +12,7 @@ const Header = () => {
 
       <div className="hidden md:flex">
         {/* Info Container */}
-        <div className='md:bg-blue-100 md:bg-opacity-80 rounded-2xl md:w-1/2 md:h-1/2 flex flex-col md:my-48 md:mx-12 p-12 content-center justify-center'>
+        <div className='md:bg-blue-100 md:bg-opacity-80 rounded-r-2xl md:w-1/2 md:h-1/2 flex flex-col md:my-48 md:mr-12 p-12 pl-14 content-center justify-center'>
           
           {/* Name and Title */}
           <div className=''>
