@@ -51,7 +51,7 @@ const Header = () => {
 
       <div>
         {/* Blue background */}
-        <div className='bg-blue-100 bg-opacity-80 flex flex-col p-12 content-center justify-center'>
+        <div className='md:hidden bg-blue-100 bg-opacity-80 flex flex-col p-12 content-center justify-center'>
           
           {/* Name and Title */}
           <div className=''>
