@@ -19,9 +19,9 @@ const ProjectDiv = (props) => {
             <p className='text-xl pb-2'>Built With:</p>
 
             {/* DevIcons will go here */}
-            <div className={`inline-flex flex-nowrap space-x-6 w-1/2 ${props.direction? 'justify-end': 'justify-start'}`}>
+            <div className={`inline-flex flex-nowrap space-x-2 w-1/2 ${props.direction? 'justify-end': 'justify-start'}`}>
             {props.tech.map((item) => {
-                return svgPicker(item);
+                return <div key={item} className='bg-blue-100 bg-opacity-10 rounded w-16 h-16 p-2 transform hover:scale-110'>{svgPicker(item)}</div>
             })} 
             </div>
 
@@ -51,20 +51,20 @@ const ProjectDiv = (props) => {
       <div className='md:hidden'>
         {/* Project Name and Description */}
         <div className=''>
-          <h1 className='pb-4 text-center'>{props.name}</h1>
+          <h1 className='pb-4 text-center text-3xl'>{props.name}</h1>
 
           {/* Project Images */}
           <img className='object-contain' src={props.image} alt={`${props.name} Screenshot`}/>
           
           {/* DevIcons will go here */}
-          <div className={`inline-flex justify-center py-8 px-12`}>
+          <div className={`flex justify-center py-8 space-x-2`}>
           {props.tech.map((item) => {
-              return svgPicker(item);
+              return <div key={item} className='bg-blue-100 bg-opacity-10 rounded w-16 h-16'>{svgPicker(item)}</div>;
           })} 
           </div>
 
           {/* Project Description */}
-          <div className={`text-2xl leading-relaxed py-4 px-6`}>
+          <div className={`text-xl leading-relaxed py-4 px-6 pb-12`}>
             {props.children}
           </div>
 
