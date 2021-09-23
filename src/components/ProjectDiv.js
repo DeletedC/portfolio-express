@@ -21,7 +21,7 @@ const ProjectDiv = (props) => {
             {/* DevIcons will go here */}
             <div className={`inline-flex flex-nowrap space-x-2 w-1/2 ${props.direction? 'justify-end': 'justify-start'}`}>
             {props.tech.map((item) => {
-                return <div className='bg-blue-100 bg-opacity-10 rounded w-16 h-16 p-2'>{svgPicker(item)}</div>
+                return <div className='bg-blue-100 bg-opacity-10 rounded w-16 h-16 p-2 transform hover:scale-110'>{svgPicker(item)}</div>
             })} 
             </div>
 
