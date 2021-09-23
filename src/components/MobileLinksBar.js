@@ -2,7 +2,7 @@ import svgPicker from "../pages/api/svgPicker";
 
 const MobileLinksBar = () => {
     return (
-        <div className="md:hidden bg-white h-18 fixed bottom-0 inset-x-0 border-t-2 border-gray-200">
+        <div className="md:hidden bg-white h-18 fixed bottom-0 inset-x-0 border-t-2 border-gray-200 z-50">
           <div className="flex justify-center py-4">
             <a className='' 
               href="https://www.linkedin.com/in/curtisjwoods" 
