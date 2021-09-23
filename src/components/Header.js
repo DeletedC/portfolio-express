@@ -16,7 +16,7 @@ const Header = () => {
           
           {/* Name and Title */}
           <div className=''>
-            <h1 className='text-4xl sm:text-7xl whitespace-nowrap pb-4'>Curtis J. Woods II</h1>
+            <h1 className='text-4xl md:text-5xl lg:text-7xl pb-4'>Curtis J. Woods II</h1>
             <h2 className=''>3D Artist turned Software Developer</h2>
           </div>
 
@@ -25,16 +25,16 @@ const Header = () => {
             <p>Greater Pittsburgh Area, PA</p>
             {/* <a href="mailto: CurtisJWoodsII@gmail.com">CurtisJWoodsII@gmail.com</a> */}
             <div className='inline-flex md:pt-12 space-x-2 h-32 w-full'>
-            <a className='flex justify-left transform hover:scale-110' 
-              href="https://www.linkedin.com/in/curtisjwoods" 
-              target='_blank' rel="noreferrer">{svgPicker('linkedIn')}</a>
-            <a className='flex justify-left transform hover:scale-110' href="mailto: CurtisJWoodsII@gmail.com">{svgPicker('email')}</a>
-            <a className='flex justify-left transform hover:scale-110' href="tel:724-777-8479">{svgPicker('phone')}</a>
-            {/* Button for Resume */}
-              <button className='bg-green-600 transform hover:scale-110 active:bg-green-700 rounded-lg py-5 px-20'
-                onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank", ['noopener', 'noreferrer'])}
-              >Résumé</button> 
-            </div>
+              <a className='flex justify-left transform hover:scale-110' 
+                href="https://www.linkedin.com/in/curtisjwoods" 
+                target='_blank' rel="noreferrer">{svgPicker('linkedIn')}</a>
+              <a className='flex justify-left transform hover:scale-110' href="mailto: CurtisJWoodsII@gmail.com">{svgPicker('email')}</a>
+              <a className='flex justify-left transform hover:scale-110' href="tel:724-777-8479">{svgPicker('phone')}</a>
+              {/* Button for Resume */}
+                <button className='bg-green-600 transform hover:scale-110 active:bg-green-700 rounded-lg py-5 px-20'
+                  onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank", ['noopener', 'noreferrer'])}
+                >Résumé</button> 
+              </div>
           </div>
             
 
