@@ -1,31 +1,34 @@
 import svgPicker from '../pages/api/svgPicker';
 
+// To hold the extra Tailwind utilities and save on typing
+const params = 'px-2 pb-4 md:px-20';
+
 const Skills = () => {
   return (
     <div className=''>
       <h1 className='text-center p-6'>Skills</h1>
 
       {/* Icons Container */}
-      <div className='px-4 md:pb-10'>
+      <div className='justify-center m-auto w-4/5 px-4 md:pb-10'>
         <table className='md:min-h-screen'>
           <tbody>
             <tr>
-              <td>{svgPicker('javascript', 'px-2 md:px-10')}</td>
-              <td>{svgPicker('react', 'px-2 pb-4 md:px-10')}</td>
-              <td>{svgPicker('html', 'px-2 pb-4 md:px-10')}</td>
-              <td>{svgPicker('css', 'px-2 pb-4 md:px-10')}</td>
+              <td>{svgPicker('javascript', params)}</td>
+              <td>{svgPicker('react', params)}</td>
+              <td>{svgPicker('html', params)}</td>
+              <td>{svgPicker('css', params)}</td>
             </tr>
             <tr>
-              <td>{svgPicker('node', 'px-2 pb-4 md:px-10')}</td>
-              <td>{svgPicker('express', 'px-2 pb-4 md:px-10')}</td>
-              <td>{svgPicker('mongoDB', 'px-2 pb-4 md:px-10')}</td>
-              <td>{svgPicker('git', 'px-2 pb-4 md:px-10')}</td>
+              <td>{svgPicker('node', params)}</td>
+              <td>{svgPicker('express', params)}</td>
+              <td>{svgPicker('mongoDB', params)}</td>
+              <td>{svgPicker('git', params)}</td>
             </tr>
             <tr>
-              <td>{svgPicker('heroku', 'px-2 pb-4 md:px-10')}</td>
-              <td>{svgPicker('netlify', 'px-2 pb-4 md:px-10')}</td>
-              <td>{svgPicker('python', 'px-2 pb-4 md:px-10')}</td>
-              <td>{svgPicker('postgres', 'px-2 pb-4 md:px-10')}</td>
+              <td>{svgPicker('heroku', params)}</td>
+              <td>{svgPicker('netlify', params)}</td>
+              <td>{svgPicker('python', params)}</td>
+              <td>{svgPicker('postgres', params)}</td>
             </tr>
           </tbody>
         </table>
