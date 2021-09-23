@@ -39,7 +39,7 @@ export default function Home() {
       </Section>
 
       {/* Skills */}
-      <Section>
+      <Section height={'h-auto'}>
         <Skills />
       </Section>
 
