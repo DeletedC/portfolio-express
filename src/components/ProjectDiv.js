@@ -26,7 +26,7 @@ const ProjectDiv = (props) => {
             </div>
 
           {/* Project Description */}
-          <div className={`flex flex-col ${props.direction? 'justify-end pl-20': 'justify-start pr-20'} text-2xl leading-relaxed py-12`}>
+          <div className={`flex flex-col ${props.direction? 'justify-end pl-20': 'justify-start pr-20'} text-2xl leading-relaxed py-12 space-y-4`}>
             {props.children}
           </div>
           
@@ -37,6 +37,10 @@ const ProjectDiv = (props) => {
 
         {/* Project Images */}
         <img className='object-contain w-2/4 rounded-2xl' src={props.image} alt={`${props.name} Screenshot`}/>
+        {/* <div className="relative w-2/4 justify-center">
+          <Image src={props.image} alt={`${props.name} Screenshot`} layout="fill" className="object-scale-down"/>
+        </div> */}
+        
         
 
       </div>
@@ -55,6 +59,9 @@ const ProjectDiv = (props) => {
 
           {/* Project Images */}
           <img className='object-contain' src={props.image} alt={`${props.name} Screenshot`}/>
+          {/* <div className="relative">
+            <Image src={props.image} alt={`${props.name} Screenshot`} layout="responsive" className="object-fit"/>
+          </div> */}
           
           {/* DevIcons will go here */}
           <div className={`flex justify-center py-8 space-x-2`}>
@@ -64,7 +71,7 @@ const ProjectDiv = (props) => {
           </div>
 
           {/* Project Description */}
-          <div className={`text-xl leading-relaxed py-4 px-6 pb-12`}>
+          <div className={`text-xl leading-relaxed py-4 px-6 pb-12 space-y-4`}>
             {props.children}
           </div>
 
