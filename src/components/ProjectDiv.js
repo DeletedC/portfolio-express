@@ -66,7 +66,7 @@ const ProjectDiv = (props) => {
           {/* DevIcons will go here */}
           <div className={`flex justify-center py-8 space-x-2`}>
           {props.tech.map((item) => {
-              return <div key={item} className='bg-blue-100 bg-opacity-10 rounded w-16 h-16'>{svgPicker(item)}</div>;
+              return <div key={item} className='bg-black bg-opacity-10 rounded w-16 h-16'>{svgPicker(item)}</div>;
           })} 
           </div>
 

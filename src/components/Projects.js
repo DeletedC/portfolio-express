@@ -11,7 +11,7 @@ const Projects = () => {
       <div className=''>
         <ProjectDiv name='Arietta'
         color={'bg-blue-400'} 
-        tech={['mongoDB', 'express', 'react', 'node', 'heroku']} 
+        tech={['mongoDB', 'express', 'react', 'heroku', 'bootstrap']} 
         image={'/img/projects/Screenshot_Arietta_New.jpg'}
         links={{
           liveSite: 'https://curtiswoods.herokuapp.com/', 
@@ -37,14 +37,27 @@ const Projects = () => {
           <p>I worked on the Amazon Prime portion and back end API to pull the data. The Amazon Prime portion was working, however it was cut for time.</p>
           <p>Currently, the project uses OMDB as a test search API. I also removed a few bugs that would crash the app on android.</p>
         </ProjectDiv>
-        <ProjectDiv name='Intonation' 
+        <ProjectDiv name='CurtisJWoods.com' 
+        tech={['nextjs', 'react', 'tailwindIcon']}
+        image={'/img/projects/Screenshot_CurtisJWoods_Portfolio.jpg'}
+        links={{
+          repo: {
+            frontEnd: 'https://github.com/DeletedC/portfolio-react',
+        }}}>
+          <p>This very website!</p>
+          <p>I used NextJs and successfully showed my ability with the React framework.</p>
+          <p>Uses a custom-coded SVG picker to display every SVG icon, dramatically cutting down on repeated code.</p>
+        </ProjectDiv>
+        <ProjectDiv name='Intonation'
+        color={'bg-blue-500'} 
         tech={['mongoDB', 'express', 'react']}
         image={'/img/projects/Screenshot_Intonation.png'}
         links={{
           repo: {
             frontEnd: 'https://github.com/DeletedC/intonation',
             backEnd: 'https://github.com/DeletedC/intonation-back-end/'
-        }}}>
+        }}}
+        direction='flex-row-reverse'>
           <p>A richer version of my student tracking app, using server-side rendering.</p>
           <p>Using NextJs, it will include a roster, admin editing capabilities, teacher and student roles, and more thorough note and lesson tracking.</p>
           <p>It currently has adding and deleting capabilities.</p>
