@@ -45,10 +45,16 @@ const svgPicker = (item, params) => {
                     {objSVG.mongoDB}
                 </DevIcon>
             );
-        case "python":
+        case "pythonIcon":
             return (
                 <DevIcon key={item} extra={params}>
-                    {objSVG.python}
+                    {objSVG.pythonIcon}
+                </DevIcon>
+            );
+        case "pythonFull":
+            return (
+                <DevIcon key={item} extra={params}>
+                    {objSVG.pythonFull}
                 </DevIcon>
             );
         case "postgres":
@@ -97,6 +103,30 @@ const svgPicker = (item, params) => {
             return (
                 <DevIcon key={item} extra={params}>
                     {objSVG.linkedIn}
+                </DevIcon>
+            );
+        case "nextjs":
+            return (
+                <DevIcon key={item} extra={params}>
+                    {objSVG.nextjs}
+                </DevIcon>
+            );
+        case "bootstrap":
+            return (
+                <DevIcon key={item} extra={params}>
+                    {objSVG.bootstrap}
+                </DevIcon>
+            );
+        case "tailwindFull":
+            return (
+                <DevIcon key={item} extra={params}>
+                    {objSVG.tailwindFull}
+                </DevIcon>
+            );
+        case "tailwindIcon":
+            return (
+                <DevIcon key={item} extra={params}>
+                    {objSVG.tailwindIcon}
                 </DevIcon>
             );
         default:

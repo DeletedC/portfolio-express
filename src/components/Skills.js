@@ -27,8 +27,13 @@ const Skills = () => {
             <tr>
               <td>{svgPicker('heroku', params)}</td>
               <td>{svgPicker('netlify', params)}</td>
-              <td>{svgPicker('python', params)}</td>
+              <td>{svgPicker('pythonFull', params)}</td>
               <td>{svgPicker('postgres', params)}</td>
+            </tr>
+            <tr>
+              <td>{svgPicker('bootstrap', params)}</td>
+              <td>{svgPicker('nextjs', params)}</td>
+              <td>{svgPicker('tailwindFull', params)}</td>
             </tr>
           </tbody>
         </table>
