@@ -1,7 +1,7 @@
 import svgPicker from '../pages/api/svgPicker';
 
 // To hold the extra Tailwind utilities and save on typing
-const params = 'px-2 pb-4 md:px-20';
+const params = 'px-2 py-10 md:px-20';
 
 const Skills = () => {
   return (
@@ -19,15 +19,15 @@ const Skills = () => {
               <td>{svgPicker('css', params)}</td>
             </tr>
             <tr>
+              <td>{svgPicker('pythonIcon', params)}</td>
               <td>{svgPicker('node', params)}</td>
               <td>{svgPicker('express', params)}</td>
-              <td>{svgPicker('mongoDB', params)}</td>
               <td>{svgPicker('git', params)}</td>
             </tr>
             <tr>
               <td>{svgPicker('heroku', params)}</td>
               <td>{svgPicker('netlify', params)}</td>
-              <td>{svgPicker('pythonFull', params)}</td>
+              <td>{svgPicker('mongoDB', params)}</td>
               <td>{svgPicker('postgres', params)}</td>
             </tr>
             <tr>
