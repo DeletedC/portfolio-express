@@ -3,6 +3,10 @@ import ButtonLinks from './ButtonLinks';
 // import Image from 'next/image';
 
 const ProjectDiv = (props) => {
+
+  // To hold the extra Tailwind utilities and save on typing
+  const params = 'p-0';
+  
   return (
     <div className={`flex flex-col items-center min-w-full py-12 pb-24 ${props.color}`}>
 
@@ -19,9 +23,9 @@ const ProjectDiv = (props) => {
             <p className='text-xl pb-2'>Built With:</p>
 
             {/* DevIcons will go here */}
-            <div className={`inline-flex flex-nowrap space-x-2 w-1/2 ${props.direction? 'justify-end': 'justify-start'}`}>
+            <div className={`inline-flex flex-nowrap space-x-2 w-100 ${props.direction? 'justify-end': 'justify-start'}`}>
             {props.tech.map((item) => {
-                return <div key={item} className='bg-blue-100 bg-opacity-10 rounded w-16 h-16 p-2 transform hover:scale-110'>{svgPicker(item)}</div>
+                return <div key={item} className='bg-blue-100 bg-opacity-10 rounded w-16 h-16 p-2 transform hover:scale-110'>{svgPicker(item, params)}</div>
             })} 
             </div>
 
@@ -66,7 +70,7 @@ const ProjectDiv = (props) => {
           {/* DevIcons will go here */}
           <div className={`flex justify-center py-8 space-x-2`}>
           {props.tech.map((item) => {
-              return <div key={item} className='bg-black bg-opacity-10 rounded w-16 h-16'>{svgPicker(item)}</div>;
+              return <div key={item} className='bg-black bg-opacity-10 rounded w-16 h-16'>{svgPicker(item, 'p-1')}</div>;
           })} 
           </div>
 

@@ -1,7 +1,7 @@
 import svgPicker from '../pages/api/svgPicker';
 
 // To hold the extra Tailwind utilities and save on typing
-const params = 'px-2 py-10 md:px-20';
+const params = 'px-2 py-10 lg:px-10 xl:px-16';
 
 const Skills = () => {
   return (

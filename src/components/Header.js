@@ -27,14 +27,14 @@ const Header = () => {
             <div className='inline-flex md:pt-12 space-x-2 h-32 w-full'>
               <a className='flex justify-left transform hover:scale-110' 
                 href="https://www.linkedin.com/in/curtisjwoods" 
-                target='_blank' rel="noreferrer">{svgPicker('linkedIn')}</a>
-              <a className='flex justify-left transform hover:scale-110' href="mailto: CurtisJWoodsII@gmail.com">{svgPicker('email')}</a>
-              <a className='flex justify-left transform hover:scale-110' href="tel:724-777-8479">{svgPicker('phone')}</a>
+                target='_blank' rel="noreferrer">{svgPicker('linkedIn', 'p-0')}</a>
+              <a className='flex justify-left transform hover:scale-110' href="mailto: CurtisJWoodsII@gmail.com">{svgPicker('email', 'p-0')}</a>
+              <a className='flex justify-left transform hover:scale-110' href="tel:724-777-8479">{svgPicker('phone', 'p-0')}</a>
               {/* Button for Resume */}
-                <button className='bg-green-600 transform hover:scale-110 active:bg-green-700 rounded-lg py-5 px-20'
-                  onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank", ['noopener', 'noreferrer'])}
-                >Résumé</button> 
-              </div>
+              <button className='flex bg-green-600 transform hover:scale-110 active:bg-green-700 rounded-lg py-5 px-5 xl:px-20'
+                onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank", ['noopener', 'noreferrer'])}
+              >Résumé</button> 
+            </div>
           </div>
             
 
