@@ -18,24 +18,23 @@ const Projects = () => {
           repo: {
             frontEnd: 'https://github.com/DeletedC/project_2'
         }}}>
-          <p>I created this simple, yet specifically targeted app to be able to manage students.</p>
-          <p>Using JSX for the front end and MongoDB for the database, students can be added and removed from the roster, notes can be created, updated, and removed.</p> 
-          <p>Lastly, you can update or remove the lesson book that they’re currently working in.</p>
+          <p>I created this studio roster web app to be able to manage students.</p>
+          <p>It uses Express-React-Views for server side rendering and Bootstrap for styling, while seamlessly integrating cloud MongoDB Atlas, which improved SEO, modernized styling, and created a snappy feel for the end user.</p>
         </ProjectDiv>
         <ProjectDiv name='GetHub'
         color={'bg-blue-500'} 
         tech={['react', 'node']}
         image={"/img/projects/Screenshot_GetHub_Jon.jpeg"} 
         links={{
-          liveSite: 'https://expo.dev/@jonrhymes/getHub', 
+          liveSite: 'https://bit.ly/gethub-app', 
           repo: {
             frontEnd: 'https://github.com/jonrhymes/gethub', 
             backEnd: 'https://github.com/DeletedC/getHub_api'
         }}} 
         direction='flex-row-reverse'>
-          <p>DeveloperWeek Hackathon team project designed to browse and search multiple video services at the same time.</p> 
-          <p>I worked on the Amazon Prime portion and back end API to pull the data. The Amazon Prime portion was working, however it was cut for time.</p>
-          <p>Currently, the project uses OMDB as a test search API. I also removed a few bugs that would crash the app on android.</p>
+          <p>DeveloperWeek Hackathon team project designed to search the OMDB API for movies.</p> 
+          <p>I created the back end Express server, custom RESTful API, tested the routes with Postman, and debugged the app.</p>
+          <p>The result is a secure API and responsive search bar and app.</p>
         </ProjectDiv>
         <ProjectDiv name='CurtisJWoods.com' 
         tech={['nextjs', 'react', 'tailwindIcon']}
@@ -45,10 +44,10 @@ const Projects = () => {
             frontEnd: 'https://github.com/DeletedC/portfolio-react',
         }}}>
           <p>This very website!</p>
-          <p>I used NextJs and successfully showed my ability with the React framework.</p>
-          <p>Uses a custom-coded SVG picker to display every SVG icon, dramatically cutting down on repeated code.</p>
+          <p>Upgraded from plain HTML to NextJs, a React framework, styled with the modern Tailwind CSS and a custom-coded SVG selector that displays every SVG icon on the site.</p>
+          <p>This creates a modern feel, improved visual flow, and a very smooth user experience.</p>
         </ProjectDiv>
-        <ProjectDiv name='Intonation'
+        <ProjectDiv name='Intonation (Upcoming Project)'
         color={'bg-blue-500'} 
         tech={['mongoDB', 'express', 'react']}
         image={'/img/projects/Screenshot_Intonation.png'}
@@ -58,7 +57,7 @@ const Projects = () => {
             backEnd: 'https://github.com/DeletedC/intonation-back-end/'
         }}}
         direction='flex-row-reverse'>
-          <p>A richer version of my student tracking app, using server-side rendering.</p>
+          <p>A richer version of my student tracking app, using server side rendering.</p>
           <p>Using NextJs, it will include a roster, admin editing capabilities, teacher and student roles, and more thorough note and lesson tracking.</p>
           <p>It currently has adding and deleting capabilities.</p>
         </ProjectDiv>
