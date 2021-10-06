@@ -32,7 +32,7 @@ const Header = () => {
               <a className='flex justify-left transform hover:scale-110' href="tel:724-777-8479">{svgPicker('phone', 'p-0')}</a>
               {/* Button for Resume */}
               <button className='flex bg-green-600 transform hover:scale-110 active:bg-green-700 rounded-lg py-5 px-5 xl:px-20'
-                onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank", ['noopener', 'noreferrer'])}
+                onClick={() => window.open("./docs/Curtis Woods - Software Engineer.pdf", "_blank", ['noopener', 'noreferrer'])}
               >Résumé</button> 
             </div>
           </div>

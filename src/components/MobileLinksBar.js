@@ -11,7 +11,7 @@ const MobileLinksBar = () => {
             <a className='' href="tel:724-777-8479">{svgPicker('phone', 'px-4')}</a>
             {/* Button for Resume */}
             <button className='bg-green-600 hover:bg-green-400 rounded-lg px-4 mx-4'
-                onClick={() => window.open("./docs/Curtis Woods - GA Resume.pdf", "_blank", ['noopener', 'noreferrer'])}
+                onClick={() => window.open("./docs/Curtis Woods - Software Engineer.pdf", "_blank", ['noopener', 'noreferrer'])}
               >Résumé</button> 
           </div>
           
